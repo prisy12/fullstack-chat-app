@@ -1,6 +1,6 @@
 import express from "express";
-// import axios from "axios";
-import { axiosInstance } from "../lib/axios.js";
+import axios from "axios";
+// import { axiosInstance } from "../lib/axios.js";
 import dotenv from "dotenv";
 import AIChat from "../models/aiChatModel.js"; // Your mongoose model
 
@@ -17,7 +17,7 @@ router.post("/", async (req, res) => {
 
   try {
     // Call Cohere or your AI API with prompt
-    const response = await axiosInstance.post(
+    const response = await axios.post(
       "https://api.cohere.ai/v1/generate",
       {
         model: "command",
