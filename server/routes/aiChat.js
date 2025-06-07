@@ -1,6 +1,6 @@
 import express from "express";
 // import axios from "axios";
-import { axiosInstance } from "../lib/axios";
+import { axiosInstance } from "../lib/axios.js";
 import dotenv from "dotenv";
 import AIChat from "../models/aiChatModel.js"; // Your mongoose model
 

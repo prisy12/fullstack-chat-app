@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 // import axios from "axios";
-import { axiosInstance } from "../lib/axios";
+import { axiosInstance } from "../lib/axios.js";
 
 const AIChatbox = ({ userId }) => {
   const [userMessage, setUserMessage] = useState("");
